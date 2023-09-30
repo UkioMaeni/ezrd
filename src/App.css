@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+.app {
+  background: #d9d6d6;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form{
+  margin-top: 50px;
+  width: 40%;
+  height: max-content;
+  border-radius: 10px;
+  background: white;
+  padding: 20px;
+
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.support_text{
+  font-family: "Roboto",sans-serif;
+  font-size: 24px;
+}
+.form_title{
+  margin-top: 10px;
+  font-family: "Roboto",sans-serif;
+  font-size: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.body{
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-family: "Inter",sans-serif;
+  font-size: 12px;
+}
+
+.body input{
+  height: 30px;
+  padding: 5px;
+  font-family: "Roboto",sans-serif;
+  font-size: 10px;
+  margin: 5px 0 20px 0;
+  width: 50%;
+}
+
+.body textarea{
+  height: 70px;
+  padding: 5px;
+  font-family: "Roboto",sans-serif;
+  font-size: 10px;
+  margin: 5px 0 20px 0;
+  width: 50%;
+}
+
+.button_send{
+  background-color: rgb(99, 99, 212);
+  border-radius: 4px;
+  padding: 10px 30px;
   color: white;
+  font-family: "Roboto",sans-serif;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #703a3a3e;
+  transition: all 0.2s ease;
 }
