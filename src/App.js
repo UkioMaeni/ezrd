@@ -28,7 +28,7 @@ function App() {
   function sendForm(){
     setModal(1);
     fetch(
-      "http://ezride.pro/qa_form/send_report",
+      "http://ezride.pro/api/v1/client/complaint",
       {
         method: "post",
         body: JSON.stringify({phone,name,email,subject,problem}),
@@ -37,7 +37,8 @@ function App() {
       }
       }
     ).then(result=>{
-
+      
+      setSending(true)
     }).catch(()=>{
       
     }).finally(
